@@ -66,6 +66,14 @@ body p {
 	align-items: center;
 }
 
+.fondo{
+	background-image: linear-gradient(rgb(245, 245, 246), rgb(8, 8, 8) ) ;
+}
+
+.animacion{
+animation-delay: 1s;
+animation-duration: 5s;
+}
 h1 {
 	/*line-height: 1.6em;*/
 	margin: 0.5em;
