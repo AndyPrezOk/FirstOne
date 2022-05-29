@@ -10,15 +10,19 @@
 body {
 	margin: 0;
 	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
 	color: rgb(34, 31, 31);
 	font-size: 1rem;
 	line-height: 1.4em;
-	text-align: center;
 
+}
 
+body p {
+	margin: 2.8em;
+}
+
+.color {
+	background-color: rgb(242, 244, 244);
 }
 
 .imagenFondoInicio {
@@ -34,10 +38,6 @@ body {
 	color: antiquewhite;
 }
 
-body p {
-	margin: 2.8em;
-
-}
 
 .imagenFondoTaller {
 	width: 100%;
@@ -57,7 +57,7 @@ body p {
 	width: 100%;
 	margin: auto;
 	max-height: 100vh;
-	/*display: flex;*/
+
 }
 
 
@@ -76,7 +76,7 @@ body p {
 }
 
 h1 {
-	/*line-height: 1.6em;*/
+
 	margin: 0.5em;
 	font-size: 2.5rem;
 	font-family: 'Monserrat';
@@ -102,75 +102,14 @@ h2 {
 	background-size: cover;
 }
 
-.navi {
-	width: 100%;
-	height: 50px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-top: 10px;
-}
-
-.menu-btn {
-	font-size: 25px;
-	color: whitesmoke;
-	margin-left: 20px;
-
-
-}
-
-.nav-menu {
-	position: absolute;
-	width: 100%;
-	height: 0vh;
-	top: 10px;
-	background-color: 0, 0, 0, .95;
-	text-align: center;
-	transition: all .5s;
-}
-
-.nav-menu li {
-	display: none;
-	line-height: 5px;
-	margin: 20px 0;
-	transition: all .5s;
-
-}
-
-.nav-menu li a {
-	color: blanchedalmond;
-	font-size: 15px;
-	text-transform: uppercase;
-	font-weight: 400;
-	text-decoration: none;
-
-}
-
-
-.nav-menu li a:hover {
-	color: rgb(223, 200, 200);
-	transition: .3s;
-}
-
-#menu {
-	display: none;
-}
-
-#menu:checked~.nav-menu {
-	height: 100vh;
-}
-
-#menu:checked~.nav-menu li {
-	display: block;
-}
-
-
 
 /*Elementos del main*/
 .main {
 	padding-top: 5rem;
 	width: 100%;
 	/*height: 100vh;*/
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 
 
@@ -232,15 +171,15 @@ h2 {
 	border-radius: 15px;
 }
 
-.carousel-item  {
+.carousel-item {
 	width: 360px;
 	height: 640px;
 }
 
 /*Formulario*/
 .form__titulo {
-	padding: 0;
-	padding-bottom: 0.8em;
+	padding-top: 1em;
+	/* padding-bottom: 0.8em; */
 	margin: 0;
 	font-family: sans-serif;
 	line-height: 0.5em;
@@ -248,14 +187,20 @@ h2 {
 	font-size: 1.5rem;
 }
 
-.form {
-	width: 420px;
-	background-color: bisque;
+.formulario {
+	margin-bottom: 2em;
+	width: 90vh;
 	padding: 30px 20px 0px 20px;
 	margin: 0 auto;
 	border-radius: 4px;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
+}
+
+.formulario label {
+	text-align: left;
+}
+.form-fondo{
+	background: linear-gradient(45deg, black, white);
 }
 
 .formato {
@@ -277,10 +222,7 @@ p label {
 }
 
 .form__btn {
-	width: 100%;
-	border-radius: 4px;
-	margin: 0.5em auto;
-	padding: 10px;
+	font-weight: bold;
 }
 
 .checkbox {
@@ -324,7 +266,6 @@ li img {
 		font-size: 1rem;
 		line-height: 1.4em;
 		text-align: center;
-		align-items: center;
 		justify-content: center;
 
 	}
@@ -339,46 +280,14 @@ li img {
 		padding-top: 2rem;
 		width: 100%;
 		height: 100vh;
+		align-items: center;
 		justify-content: center;
 		overflow: auto;
-
 	}
 
 	.redes {
 		padding-top: 15px;
 		display: flex;
-	}
-
-
-	.nav {
-		height: 100px;
-	}
-
-	.menu-btn {
-		display: none;
-	}
-
-
-	.nav-menu {
-		position: relative;
-		height: 100px;
-		top: 0;
-		background: none;
-		transition: none;
-		text-align: left;
-		margin-left: 50px;
-	}
-
-	.nav-menu li {
-		display: inline-block;
-		line-height: 100px;
-		margin: 0 20px;
-		transition: none;
-	}
-
-	.nav-menu li a {
-		padding-bottom: 0%;
-		font-size: 15px;
 	}
 
 
