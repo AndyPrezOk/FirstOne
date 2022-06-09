@@ -1,0 +1,23 @@
+@import'variables';
+
+@mixin encabezado($size){
+	font-size: $size; 
+	margin:0.5em;
+	text-align:center;
+	font-family: $font;
+    @if $size > 2rem{
+        white-space: pre-line;
+        font-weight: 500;
+       
+    }
+    @else if $size == 2rem{
+        font-style: oblique;
+        font-weight: 300;
+        color:map-get($sweet-colors, primary-dark);
+    } 
+    @else{
+        font-weight: 200;
+        color:map-get($sweet-colors, primary );
+    }
+
+}
