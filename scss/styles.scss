@@ -10,87 +10,82 @@
 %btn {
     width: 100px;
     text-align: center;
-    padding: 5px 0;
+    padding: 5px;
     margin: 2px auto;
-    border-radius: 2px;
+    border-radius: 15px;
     color: colores(text1);
+
 }
 
 /*Etiquetas del body*/
 body {
 
     margin: 0;
-    min-height: 100vh;
+    min-height: 90vh;
     font-family: font;
     color: rgb(34, 31, 31);
     font-size: 1rem;
 
     p {
-        margin: 2.8em;
-        line-height: 1.4em;
+        margin: 0.5em;
+        line-height: 1em;
+        size: 1em;
 
         &:hover {
-            font-weight: 600;
+            font-weight: 400;
         }
-
     }
 
-    h1 {       
-        
+
+    h1 {
+
         @include encabezado(2.5rem);
 
     }
 
     h2 {
         @include encabezado(2rem);
-                 
+
 
     }
 }
 
 
-/* .color {
-    background-color: rgb(242, 244, 244);
-} */
+.radius {
+    border-radius: 10px;
+}
+
+.background {
+     background: $gradientBW;
+    padding: 10px;
+    box-shadow: $shadow;
+
+}
 
 .imagen-fondo-inicio {
     width: 100%;
     height: 100vh;
+  
+    justify-items: center;
 
     background: {
         color: rgb(22, 22, 22);
-        image: url(../img/El-mago-de-OZ2.jpg);
+        image: url(../img/reinaRoja2.jpg);
         position: center center;
         repeat: no-repeat;
         attachment: fixed;
         size: cover;
+
     }
 
     font-family: $font;
     color: antiquewhite;
 }
 
-.imagenFondoTaller {
-    width: 100%;
-    height: 85vh;
-    padding-top: 50px;
-
-    background: {
-        color: rgb(22, 22, 22);
-        image: url(../img/taller.jpg);
-        position: center center;
-        repeat: no-repeat;
-        attachment: fixed;
-        size: cover;
-    }
-
-    font-family: $font;
-    color: antiquewhite;
-}
 
 .contenedor {
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
     max-height: 100vh;
 
 }
@@ -102,6 +97,7 @@ body {
 
 .fondo {
     background-image: linear-gradient(rgb(245, 245, 246), rgb(8, 8, 8));
+    box-shadow: $shadow;
 }
 
 .animacion {
@@ -113,8 +109,9 @@ body {
 
 .header {
     width: 100%;
-    height: 80%;
-  
+    height: 80px;
+    padding: auto;
+
 
     background: {
         color: black;
@@ -124,7 +121,6 @@ body {
     }
 
 }
-
 
 /*Elementos del main*/
 .main {
@@ -139,12 +135,12 @@ body {
 
 .btn-registro {
     @extend %btn;
-    background-color: colores(primary-dark);
+    background-color: colores(primary-light);
 }
 
 .btn-exit {
     @extend %btn;
-    background-color: colores(primary-light);
+    background-color: colores(primary-dark);
 }
 
 
@@ -172,13 +168,16 @@ body {
 }
 
 .img {
-    width: 100%; 
-  /*   max-width: 70%;
+    width: 50%;
     height: auto;
-    display: block;s
-    margin: auto;
-    /*margin-bottom: 3em;*/ 
-    border-radius: 15px;
+    display: block; 
+    margin: auto; 
+    border-radius: 30px;
+    box-shadow: cadetblue;
+
+}
+.mapa{
+    margin-bottom: 2em;
 }
 
 .carousel-item {
@@ -186,10 +185,11 @@ body {
     height: 640px;
 }
 
+
 /*Formulario*/
 .formulario__titulo {
     padding-top: 1em;
-    /* padding-bottom: 0.8em; */
+    
     margin: 0;
     font-family: font;
     line-height: 0.5em;
@@ -198,8 +198,6 @@ body {
 }
 
 .formulario {
-    margin-bottom: 2em;
-    width: 90vh;
     padding: 30px 20px 0px 20px;
     margin: 0 auto;
     border-radius: 4px;
@@ -213,7 +211,12 @@ body {
 
 .form-fondo {
     background: $gradientBW;
-}
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width:40vw;
+    display: inline-block;
+   
+} 
 
 .formato {
     width: 100%;
@@ -229,17 +232,17 @@ p label {
     height: 2em;
     text-align: left;
     font-size: 1em;
-    margin-bottom: 0.2em;
+
 
 }
 
 .form__btn {
-    padding-top: 10px;
+    padding-top: 5px;
     margin: 0 auto;
     display: block;
     align-items: baseline;
     font-weight: bold;
-    
+
 }
 
 
@@ -250,7 +253,8 @@ p label {
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    background-color: darkgray;
+    background-color: rgb(42, 41, 41);
+    color: antiquewhite;
     text-align: center;
 }
 
@@ -268,29 +272,39 @@ p label {
 @media screen and (min-width:568px) {
     body {
         margin: 0;
-        min-height: 90vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         font-size: 1rem;
-        line-height: 1.4em;
+        line-height: 1.2em;
         text-align: center;
         justify-content: center;
+
+        p {
+            line-height: 2em;
+            size: 2.5em;
+            margin: 1.5em;
+
+            &:hover {
+                font-weight: 500;
+            }
+        }
 
     }
 
     .header {
-        height: 80%;
-    } 
+        height: 100%;
+    }
 
     .main {
-        margin-top: 1rem;
-        margin-bottom: 4rem;
+        /* margin-top: 1rem;
+        margin-bottom: 4rem; */
         padding-top: 2rem;
         width: 100%;
         height: 100vh;
         align-items: center;
         justify-content: center;
-        overflow: auto;
+        /*  overflow: auto; */
     }
 
     .form__btn {
@@ -298,31 +312,27 @@ p label {
         justify-content: center;
     }
 
-    body {
+    /* body {
         p {
-            margin: 2.8em;
-
+            margin: 2em;
         }
     }
-
+ */
     .footer {
         display: flex;
         height: 50px;
         width: 100%;
         justify-content: space-evenly;
         align-items: center;
-        background-color: darkgray;
+        background-color: rgb(42, 41, 41);
         text-align: center;
-
     }
 
-    .redes {
-        padding-top: 15px;
-        display: flex;
-    }
+    
+    
 
     .grilla {
-        grid-template-columns:(1fr 1fr);
+        grid-template-columns: (1fr 1fr);
         grid-template-areas:
             "img1 img2"
             "img3 img4"
@@ -333,7 +343,7 @@ p label {
 
     .img1 {
         grid-area: img1;
-        
+
     }
 
     .img2 {
@@ -355,6 +365,4 @@ p label {
     .img6 {
         grid-area: img6;
     }
-
-
 }

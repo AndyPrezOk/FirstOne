@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contactate con nosotros para obtener informacion a cerac de nuestros espectáculos">
+    <meta name="description"
+        content="Contactate con nosotros para obtener informacion a cerac de nuestros espectáculos">
     <meta name="keywords" content="Contacto, Obras, Teatro">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <title>Contacto | Los SushiChou</title>
 
     <link rel="stylesheet" href="../css/styles.css">
@@ -19,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 
 <body class="flexBody color">
@@ -27,6 +30,11 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/logoChicoSushi.png" alt="" width="90" height="80" class="radius">
+                    </a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -43,9 +51,9 @@
         </header>
 
         <!--Formulario-->
-        <main>
+        <main class="background">
             <h1>Contactanos</h1>
-            <div class="container form-fondo">
+            <div class="form-fondo">
                 <h4 class="formulario__titulo">Formulario de contacto</h4>
                 <div class="row justify-content-between">
                     <form action="#" class="formulario col-sm-4 col-md-11 col-lg-12 ">
@@ -73,7 +81,8 @@
                             </div>
                             <div class="form-group">
                                 <button class="btn btn-primary btn-lg form-label form__btn">Enviar</button>
-                                <button class="btn btn-outline-primary btn-lg form-label form__btn">Eliminar datos</button>
+                                <button class="btn btn-outline-primary btn-lg form-label form__btn">Eliminar
+                                    datos</button>
                             </div>
                         </div>
                 </div>
@@ -87,14 +96,11 @@
     <footer class="footer">
 
         <p>Realizado por @Andy Prez</p>
-        <nav>
-            <ul>
-                <ul class="redes">
-                    <li><a href=""> <img src="img/facebook.png" alt=""></a></li>
-                    <li><a href=""> <img src="img/twitter.png" alt=""></a></li>
-                    <li><a href=""> <img src="img/instagram.png" alt=""></a></li>
-                </ul>
-        </nav>
+        <div>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -12,60 +12,56 @@
 .btn-registro, .btn-exit {
   width: 100px;
   text-align: center;
-  padding: 5px 0;
+  padding: 5px;
   margin: 2px auto;
-  border-radius: 2px;
+  border-radius: 15px;
   color: white; }
 
 /*Etiquetas del body*/
 body {
   margin: 0;
-  min-height: 100vh;
+  min-height: 90vh;
   font-family: font;
   color: #221f1f;
   font-size: 1rem; }
   body p {
-    margin: 2.8em;
-    line-height: 1.4em; }
+    margin: 0.5em;
+    line-height: 1em;
+    size: 1em; }
     body p:hover {
-      font-weight: 600; }
+      font-weight: 400; }
   body h1 {
     font-size: 2.5rem;
-    margin: 0.5em;
+    /* margin: 0.5em; */
+    padding-top: 0.5em;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     white-space: pre-line;
-    font-weight: 500; }
+    font-weight: 700; }
   body h2 {
     font-size: 2rem;
-    margin: 0.5em;
+    /* margin: 0.5em; */
+    padding-top: 0.5em;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-style: oblique;
-    font-weight: 300;
+    font-weight: 500;
     color: #0a5044; }
 
-/* .color {
-    background-color: rgb(242, 244, 244);
-} */
+.radius {
+  border-radius: 10px; }
+
+.background {
+  background: linear-gradient(45deg, black, white);
+  padding: 10px;
+  box-shadow: 0 5px 20px rgba(57, 55, 55, 0.2); }
+
 .imagen-fondo-inicio {
   width: 100%;
   height: 100vh;
+  justify-items: center;
   background-color: #161616;
-  background-image: url(../img/El-mago-de-OZ2.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: "Montserrat", sans-serif;
-  color: antiquewhite; }
-
-.imagenFondoTaller {
-  width: 100%;
-  height: 85vh;
-  padding-top: 50px;
-  background-color: #161616;
-  background-image: url(../img/taller.jpg);
+  background-image: url(../img/reinaRoja2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -74,8 +70,8 @@ body {
   color: antiquewhite; }
 
 .contenedor {
-  width: 100%;
-  margin: auto;
+  width: 90%;
+  margin: 0 auto;
   max-height: 100vh; }
 
 .containerObras {
@@ -83,7 +79,8 @@ body {
   align-items: center; }
 
 .fondo {
-  background-image: linear-gradient(#f5f5f6, #080808); }
+  background-image: linear-gradient(#f5f5f6, #080808);
+  box-shadow: 0 5px 20px rgba(57, 55, 55, 0.2); }
 
 .animacion {
   animation-delay: 1s;
@@ -92,7 +89,8 @@ body {
 /*header*/
 .header {
   width: 100%;
-  height: 80%;
+  height: 80px;
+  padding: auto;
   background-color: black;
   background-repeat: no-repeat;
   background-position: center;
@@ -108,10 +106,10 @@ body {
   justify-content: center; }
 
 .btn-registro {
-  background-color: #0a5044; }
+  background-color: #3fe7cb; }
 
 .btn-exit {
-  background-color: #3fe7cb; }
+  background-color: #0a5044; }
 
 .grilla {
   display: grid;
@@ -129,13 +127,15 @@ body {
   grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6"; }
 
 .img {
-  width: 100%;
-  /*   max-width: 70%;
-    height: auto;
-    display: block;s
-    margin: auto;
-    /*margin-bottom: 3em;*/
-  border-radius: 15px; }
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: cadetblue; }
+
+.mapa {
+  margin-bottom: 2em; }
 
 .carousel-item {
   width: 360px;
@@ -144,7 +144,6 @@ body {
 /*Formulario*/
 .formulario__titulo {
   padding-top: 1em;
-  /* padding-bottom: 0.8em; */
   margin: 0;
   font-family: font;
   line-height: 0.5em;
@@ -152,8 +151,6 @@ body {
   font-size: 1.5rem; }
 
 .formulario {
-  margin-bottom: 2em;
-  width: 90vh;
   padding: 30px 20px 0px 20px;
   margin: 0 auto;
   border-radius: 4px; }
@@ -161,7 +158,11 @@ body {
     text-align: left; }
 
 .form-fondo {
-  background: linear-gradient(45deg, black, white); }
+  background: linear-gradient(45deg, black, white);
+  border-radius: 15px;
+  margin-bottom: 10px;
+  width: 40vw;
+  display: inline-block; }
 
 .formato {
   width: 100%;
@@ -175,11 +176,10 @@ body {
 p label {
   height: 2em;
   text-align: left;
-  font-size: 1em;
-  margin-bottom: 0.2em; }
+  font-size: 1em; }
 
 .form__btn {
-  padding-top: 10px;
+  padding-top: 5px;
   margin: 0 auto;
   display: block;
   align-items: baseline;
@@ -192,7 +192,8 @@ p label {
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  background-color: darkgray;
+  background-color: #2a2929;
+  color: antiquewhite;
   text-align: center; }
 
 .redes {
@@ -205,40 +206,47 @@ p label {
 @media screen and (min-width: 568px) {
   body {
     margin: 0;
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-size: 1rem;
-    line-height: 1.4em;
+    line-height: 1.2em;
     text-align: center;
     justify-content: center; }
+    body p {
+      line-height: 2em;
+      size: 2.5em;
+      margin: 1.5em; }
+      body p:hover {
+        font-weight: 500; }
   .header {
-    height: 80%; }
+    height: 100%; }
   .main {
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+    /* margin-top: 1rem;
+        margin-bottom: 4rem; */
     padding-top: 2rem;
     width: 100%;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    overflow: auto; }
+    /*  overflow: auto; */ }
   .form__btn {
     display: flex;
     justify-content: center; }
-  body p {
-    margin: 2.8em; }
+  /* body {
+        p {
+            margin: 2em;
+        }
+    }
+ */
   .footer {
     display: flex;
     height: 50px;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    background-color: darkgray;
+    background-color: #2a2929;
     text-align: center; }
-  .redes {
-    padding-top: 15px;
-    display: flex; }
   .grilla {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "img1 img2" "img3 img4" "img3 img5" "img6 img5"; }
