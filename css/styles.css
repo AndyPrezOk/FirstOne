@@ -160,9 +160,10 @@ body {
 .form-fondo {
   background: linear-gradient(45deg, black, white);
   border-radius: 15px;
-  margin-bottom: 10px;
-  width: 40vw;
-  display: inline-block; }
+  margin: 0, auto;
+  width: 100%;
+  /* display: inline-block; */
+  justify-items: center; }
 
 .formato {
   width: 100%;
@@ -196,13 +197,15 @@ p label {
   color: antiquewhite;
   text-align: center; }
 
-.redes {
-  display: flex; }
-  .redes img {
-    width: 30px;
-    text-align: center; }
+/* .redes {
+    display: flex;
 
-/*media query*/
+    img {
+        width: 30px;
+        text-align: center;
+    }
+} */
+/***********************media query**********************************/
 @media screen and (min-width: 568px) {
   body {
     margin: 0;
@@ -222,23 +225,18 @@ p label {
   .header {
     height: 100%; }
   .main {
-    /* margin-top: 1rem;
-        margin-bottom: 4rem; */
     padding-top: 2rem;
     width: 100%;
     height: 100vh;
     align-items: center;
-    justify-content: center;
-    /*  overflow: auto; */ }
-  .form__btn {
-    display: flex;
     justify-content: center; }
-  /* body {
-        p {
-            margin: 2em;
-        }
-    }
- */
+  /*  .form__btn {
+            display: flex;
+            justify-content: center;
+        } */
+  .form-fondo {
+    display: inline-block;
+    width: 40%; }
   .footer {
     display: flex;
     height: 50px;
@@ -247,6 +245,14 @@ p label {
     align-items: center;
     background-color: #2a2929;
     text-align: center; }
+    .footer .iconos {
+      font-size: 25px;
+      padding: 0, 10px; }
+      .footer .iconos i:hover {
+        color: lightgray;
+        animation: infinite; }
+  .animacion {
+    animation: trans; }
   .grilla {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "img1 img2" "img3 img4" "img3 img5" "img6 img5"; }
