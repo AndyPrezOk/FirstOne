@@ -20,45 +20,60 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="./img/logoChicoSushi.png" alt="" width="90" height="80" class="radius">
+                    <div class="img-fluid">
+                        <img src="./img/logoChicoSushi.png" alt="logo" class="logo">
+                    </div>
                 </a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="opciones">
-                <ul class="navbar-nav">
-
-                    <li class="nav-item"><a class="nav-link" href="./index.html">INICIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/proyectos.html">PROYECTOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/talleres.html">TALLERES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a></li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: rgb(226, 31, 31) ;" aria-current="page"
+                                href="./index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark radius" href="./pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark radius" href="./pages/proyectos.html">PROYECTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark radius" href="./pages/talleres.html">TALLERES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark radius" href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
+
     </header>
     <main class="imagen-fondo-inicio">
         <div class="container">
             <h1>Los SushiChou
-                Compañia Teatral
+                Compañía Teatral
             </h1>
             <p class="h2 animacion">
                 ¡Bienvenid&#127917 a nuestro sitio!
             </p>
             <p>
-                Aquí encontrarás toda la información sobre nuestra Compañia Teatral, imagenes de las obras, proyectos y
-                eventos
+                Aquí encontrarás toda la información sobre nuestra Compañía Teatral, imagenes de las obras, proyectos y
+                eventos.
             </p>
-            <p>
+            <p></p>
                 Espero que disfrutes este espacio.
             </p>
         </div>
@@ -67,12 +82,18 @@
             <div class="btn-exit">Salir</div>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer  bg-secondary">
         <p> Realizado por @Andy Prez</p>
-        <div class="iconos">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-instagram"></i>
+        <div class="container-foo">
+            <div class="iconos">
+                <a href="https://www.facebook.com/LosSushiChou"><i class="bx bxl-facebook-circle h2"></i></a>
+            </div>
+            <div class="iconos">
+                <a href="https://www.instagram.com/los_sushichou/?hl=es"><i class="bx bxl-instagram h2"></i></a>
+            </div>
+            <div class="iconos">
+                <a href="https://mobile.twitter.com/lossushichou"><i class="bx bxl-twitter h2"></i></a>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

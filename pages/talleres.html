@@ -19,37 +19,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 
 <body class="fondo">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                  <img src="../img/logoChicoSushi.png" alt="" width="90" height="80" class="radius">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <div class="img-fluid">
+                        <img src="../img/logoChicoSushi.png" alt="logo" class="logo">
+                    </div>
                 </a>
-              </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="opciones">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">NOSOTROS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./proyectos.html">PROYECTOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./talleres.html">TALLERES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contacto.html">CONTACTO</a></li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: rgb(226, 31, 31) ;" aria-current="page"
+                                href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark radius" href="./nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark radius" href="./proyectos.html">PROYECTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark radius" href="./talleres.html">TALLERES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark radius" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main class="background">
+    <main>
         <h1> Taller de teatro</h1>
 
         <!-- Boton Modal -->
-        <button type="button" class="btn btn-primary form-label" data-bs-toggle="modal" data-bs-target="#myModal">
+        <button type="button" class="btn btn-outline-dark form-label" data-bs-toggle="modal" data-bs-target="#myModal">
             Más Info
         </button>
 
@@ -86,20 +101,40 @@
             </div>
         </div>
 
-        <div class="img">
-            <img src="../img/taller.jpg" alt="taller de teatro" class=" img-thumbnail ">
-            <p class="h2">Nuestra ubicación</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6094966548726!2d-58.41463348476992!3d-34.61403488045685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf726411867%3A0x5621c927295c877e!2sMoreno%203281%2C%20C1209%20ABI%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1654992836415!5m2!1ses!2sar" width="550" height="450" style="border:2" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+        <div class="container">
+            <section>
+                <img src="../img/taller.jpg" alt="taller de teatro" class=" img-thumbnail ">
+            </section>
+            <section>
+                <p class="h2">Nuestra ubicación</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6567.218991763643!2d-58.4124448!3d-34.6140349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf726411867%3A0x5621c927295c877e!2sMoreno%203281%2C%20C1209%20ABI%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656173019332!5m2!1ses-419!2sar"
+                    width="400" height="300" style="box-shadow: 0.2px blanchedalmond;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="img-fluid"></iframe>
+            </section>
+
+            <!-- <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6094966548726!2d-58.41463348476992!3d-34.61403488045685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf726411867%3A0x5621c927295c877e!2sMoreno%203281%2C%20C1209%20ABI%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1654992836415!5m2!1ses!2sar"
+                width="550" height="450" style="border:2" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
-
     </main>
-    <footer class="footer">
-
+    <footer class="footer  bg-secondary">
         <p>Realizado por @Andy Prez</p>
-        <div class="iconos">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-instagram"></i>
+        <div class="container-foo">
+            <div class="iconos">
+                 <a href="https://www.facebook.com/LosSushiChou" target="_blank">
+                    <i class="bx bxl-facebook-circle h2"></i>
+                </a>
+            </div>
+            <div class="iconos">
+                <a href="https://www.instagram.com/los_sushichou/?hl=es" target="_blank">
+                <i class="bx bxl-instagram h2"></i> 
+            </a>
+            </div>
+            <div class="iconos">
+                <i class="bx bxl-twitter h2"></i>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

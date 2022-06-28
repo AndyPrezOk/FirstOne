@@ -20,78 +20,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="../img/logoChicoSushi.png" alt="" width="90" height="80" class="radius">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <div class="img-fluid">
+                        <img src="../img/logoChicoSushi.png" alt="logo" class="logo">
+                    </div>
                 </a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="opciones">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">NOSOTROS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./proyectos.html">PROYECTOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./talleres.html">TALLERES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contacto.html">CONTACTO</a></li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: rgb(226, 31, 31) ;" aria-current="page"
+                                href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark radius" href="./nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark radius" href="./proyectos.html">PROYECTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark radius" href="./talleres.html">TALLERES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark radius" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-
-    <main class="container">
-        <h1>Nuestros Proyectos</h1>
-
-        <!-- Carousel -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-            </div>
-
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-                <div class="carousel-item active col-md-6 col-lg-4">
-                    <img src="../img/El-mago-de-OZ2.jpg" alt="magoDeOz" class="d-block w-100">
+    <main>
+        <div class="container-fluid">
+            <h1>Nuestros Proyectos</h1>
+            <div class="grilla">
+                <div class="grilla-galeria">
+                    <img src="/img/Alicia.jpg" width="600" height="400" class="img-galeria">
                 </div>
-                <div class="carousel-item col-md-6 col-lg-4">
-                    <img src="../img/Reyes.jpg" alt="Reyes" class="d-block w-100">
+                <div class="grilla-galeria">
+                    <img src="/img/Coco3.jpg" width="300" height="400" class="img-galeria">
                 </div>
-                <div class="carousel-item col-md-6 col-lg-4">
-                    <img src="../img/MAlefica1.jpg" alt="Malefica" class="d-block w-100">
+                <div class="grilla-galeria">
+                    <img src="/img/El-circo.jpg" width="500" height="700" class="img-galeria">
                 </div>
-                <div class="carousel-item col-md-6 col-lg-4">
-                    <img src="../img/LaBella.jpg" alt="Bella" class="d-block w-100">
+                <div class="grilla-galeria">
+                    <img src="/img/El-mago-de-OZ2.jpg" width="400" height="600" class="img-galeria">
+                </div>
+                <div class="grilla-galeria">
+                    <img src="/img/magodeOz5.jpeg" width="300" height="500" class="img-galeria">
+                </div>
+                <div class="grilla-galeria">
+                    <img src="/img/reina-roja.jpg" width="600" height="400" class="img-galeria">
                 </div>
             </div>
-
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
     </main>
-
-    <footer class="footer">
+    <footer class="footer bg-secondary">
         <p>Realizado por @Andy Prez</p>
-        <div class="iconos">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-instagram"></i>
+        <div class="container-foo">
+            <div class="iconos">
+                <i class="bx bxl-facebook-circle h2"></i>
+            </div>
+            <div class="iconos">
+                <i class="bx bxl-instagram h2"></i>
+            </div>
+            <div class="iconos">
+                <i class="bx bxl-twitter h2"></i>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
