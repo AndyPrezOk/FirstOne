@@ -30,8 +30,17 @@ body {
         size: 1.5em;
     }
 
-    spam {
+    span {
         font-weight: 400;
+    }
+
+    .fondo-color {
+        clip-path: polygon(100% 0, 3% 0, 100% 100%);
+        background-color: #187e93;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
     }
 }
 
@@ -48,7 +57,6 @@ h2 {
 
 }
 
-
 .radius {
     border-radius: 50px;
 }
@@ -62,7 +70,7 @@ h2 {
 
 .imagen-fondo-inicio {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     justify-items: center;
     font-family: $font;
     color: antiquewhite;
@@ -75,7 +83,10 @@ h2 {
         size: cover;
 
     }
+}
 
+.inicio {
+    padding-top: 2rem;
 }
 
 .contenedor {
@@ -94,7 +105,7 @@ h2 {
 
 .header {
     width: 100%;
-    height: 80px;
+    height: 80vh;
     padding: auto;
 
 
@@ -108,10 +119,19 @@ h2 {
 }
 
 .logo {
-    width: 30px;
-    height: 30px;
-    border: radius 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 
+    &:hover {
+        transform: scale(1.2);
+    }
+
+}
+
+#navbarNav {
+    margin-right: 5rem;
+    justify-content: flex-end;
 }
 
 /***********************************Elementos del main************************************/
@@ -157,11 +177,6 @@ h2 {
     max-width: 90%;
     margin: 0 auto;
     padding: 1rem;
-    /* grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-    align-items: center;
-    justify-items: stretch;
-    justify-content: center; */
     gap: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -184,21 +199,13 @@ h2 {
     grid-column: 2/4;
 }
 
-
 .img-galeria {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/*   grid-template-areas:
-        "img1"
-        "img2"
-        "img3"
-        "img4"
-        "img5"
-        "img6";
-} */
+
 
 .img {
     width: 50%;
@@ -212,7 +219,8 @@ h2 {
 }
 
 .mapa {
-    margin-bottom: 2em;
+    margin-top: 3em;
+    width: 70%;
 }
 
 .carousel-item {
@@ -220,6 +228,13 @@ h2 {
     height: 450px;
 }
 
+.formato-error {
+    max-width: 90%;
+    height: 490px;
+    margin: 0 auto;
+    padding: 1rem;
+    margin: 0 auto;
+}
 
 /************************Formulario**********************************/
 .formulario__titulo {
@@ -248,7 +263,6 @@ h2 {
     border-radius: 15px;
     margin: 0, auto;
     width: 100%;
-    /* display: inline-block; */
     justify-items: center;
 
 }
@@ -280,6 +294,28 @@ p label {
 
 }
 
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+
+    a {
+        text-decoration: none;
+        color: red;
+        size: 2rem;
+        font-weight: 400;
+    }
+}
+
+.img-error {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    align-items: center;
+
+}
+
+
 /*****************************FOOTER***************************/
 .footer {
     display: flex;
@@ -288,49 +324,51 @@ p label {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-   
-    .design-foo {
-        font-style: italic;
-        transition: all 0.2s;
-      
-        &:hover {
-            font-weight: 500;
-        }
-    }
+    color: antiquewhite;
+
 
     .container-foo {
         display: flex;
         align-items: center;
-       /*  color: antiquewhite; */
     }
 
-    .iconos {
+    .iconos .icono1,
+    .icono2,
+    .icono3 {
         size: 15px;
         margin: 0;
-        padding: 0 5px;
+        padding: 5px;
         transition: all .2s;
         justify-content: right;
-
+        color: antiquewhite;
+        border-radius: 4rem;
     }
 
-    .iconos:hover {
-        background-color: #1877f2;
+    .icono1:hover {
+        color: #1877f2;
         box-shadow: 0 0 2px #1877f2;
+        border: solid 1px #1877f2;
     }
 
-    .iconos:hover:nth-child(2) {
+    .icono2:hover {
         color: #e60073;
         box-shadow: 0 0 2px #e60073;
+        border: solid 1px #e60073;
     }
 
-    .iconos:hover:nth-child(3) {
+    .icono2:hover {
+        color: #e60073;
+        box-shadow: 0 0 2px #e60073;
+        border: solid 1px #e60073;
+    }
+
+    .icono3:hover {
         color: #1da1f2;
         box-shadow: 0 0 2px #1da1f2;
+        border: solid 1px #1da;
     }
 
 }
-
-
 
 /***********************media query**********************************/
 @media screen and (min-width:768px) {
@@ -358,13 +396,14 @@ p label {
 
         .header {
             height: 100%;
-            width: 90wh;
+            width: auto;
         }
 
         .logo {
             width: 70px;
             height: 70px;
             border-radius: 50%;
+            margin-left: 3rem;
         }
 
 
@@ -374,6 +413,12 @@ p label {
             height: 100vh;
             align-items: center;
             justify-content: center;
+        }
+
+        .mapa {
+            margin-top: 3em;
+            width: 100%;
+
         }
 
         .form-fondo {
@@ -397,60 +442,32 @@ p label {
 
         }
 
-         .footer {
+
+        .footer {
             display: flex;
             height: 50px;
             width: 100%;
             justify-content: space-evenly;
             align-items: center;
             text-align: center;
-           
 
-            p {
-                color: antiquewhite;
-
-                &:hover {
-                    font-weight: 400;
-                }
-            }
 
             .container-foo {
                 display: flex;
                 align-items: center;
-                
-                a {
-                    text-decoration: none;
-                    color: antiquewhite;
-                }
+
+
             }
 
-            .iconos {
-                size: 30px;
-                margin: 0;
-                padding: 0 10px;
+            .iconos .icono1,
+            .icono2,
+            .icono3 {
+                font-size: 30px;
                 transition: all .2s;
                 justify-content: right;
 
             }
 
-            .iconos:hover:nth-child() {
-                color: #1877f2;
-                box-shadow: 0 0 2px #1877f2;
-                cursor: pointer;
-            }
-
-            .iconos:hover:nth-child(2) {
-                color: #e60073;
-                box-shadow: 0 0 2px #e60073;
-                cursor: pointer;
-            }
-
-            .iconos:hover:nth-child(3) {
-                color: #1da1f2;
-                box-shadow: 0 0 2px #1da1f2;
-                cursor: pointer;
-            }
-
         }
-    } 
     }
+}
